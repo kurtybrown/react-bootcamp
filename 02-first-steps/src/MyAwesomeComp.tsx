@@ -19,10 +19,10 @@ const myStyles: CSSProperties = {
 
 export function MyAwesomeComp () {
   return (
-    <>
-      <h1>{name}</h1>
+    <div>
+      <h1 data-testid='title-name'>{name}</h1>
       <h3>{lastName}</h3>
-      <p>{favGames.join(', ')}</p>
+      <p className="mi-clase-fav">{favGames.join(', ')}</p>
       <p>{2+1}</p>
       <h2>{isActive ? 'Activo' : 'No activo'}</h2>
       <p
@@ -30,7 +30,7 @@ export function MyAwesomeComp () {
       >
         { JSON.stringify(address) }
       </p>
-    </>
+    </div>
   )
 
 }
